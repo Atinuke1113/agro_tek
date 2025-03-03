@@ -1,127 +1,79 @@
 <template>
-    <div class="relative min-h-screen bg-gray-50">
-    
-        <div class="pt-20 pb-16">
-
-            <div class="text-center mb-16 px-4">
-                <h2 class="text-4xl font-bold text-gray-800 mb-4">Our Services</h2>
-                <div class="w-24 h-1 bg-green-600 mx-auto mb-6"></div>
-                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-                    We provide comprehensive agricultural solutions focused on empowering farmers and promoting sustainable farming practices.
+    <section id="services" class="py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
+                <p class="text-lg text-gray-600">
+                    Comprehensive agricultural solutions designed to enhance farming productivity and sustainability.
                 </p>
             </div>
 
-         
-            <div class="container mx-auto px-4">
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="service-card">
-                        <div class="icon-wrapper">
-                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Farm Management -->
+                <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-200 overflow-hidden">
+                    <div class="p-6">
+                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
                             </svg>
                         </div>
-                        <h3 class="text-2xl font-semibold mb-3">Agricultural Training</h3>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Farm Management</h3>
                         <p class="text-gray-600 mb-4">
-                            Comprehensive training programs for farmers, focusing on modern farming techniques and sustainable practices.
+                            Comprehensive farm management solutions to optimize your agricultural operations and increase productivity.
                         </p>
-                        <ul class="space-y-2">
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                </svg>
-                                Crop Management
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                </svg>
-                                Soil Conservation
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                </svg>
-                                Water Management
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="service-card">
-                        <div class="icon-wrapper">
-                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        <a href="#" class="text-green-600 hover:text-green-700 font-medium inline-flex items-center">
+                            Learn More
+                            <svg class="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                             </svg>
-                        </div>
-                        <h3 class="text-2xl font-semibold mb-3">Farm Support Services</h3>
-                        <p class="text-gray-600 mb-4">
-                            Comprehensive support services to ensure successful farming operations and maximum yield.
-                        </p>
-                        <ul class="space-y-2">
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                </svg>
-                                Equipment Access
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                </svg>
-                                Seed Distribution
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                </svg>
-                                Technical Support
-                            </li>
-                        </ul>
-                    </div>
-
-                    
-                    <div class="service-card">
-                        <div class="icon-wrapper">
-                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                            </svg>
-                        </div>
-                        <h3 class="text-2xl font-semibold mb-3">Community Programs</h3>
-                        <p class="text-gray-600 mb-4">
-                            Inclusive programs designed to support and empower farming communities.
-                        </p>
-                        <ul class="space-y-2">
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                </svg>
-                                Women Empowerment
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                </svg>
-                                Disability Support
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                </svg>
-                                Community Education
-                            </li>
-                        </ul>
+                        </a>
                     </div>
                 </div>
 
-              
-                <div class="mt-16 text-center">
-                    <h3 class="text-2xl font-semibold mb-6">Ready to Get Started?</h3>
-                    <button class="bg-green-600 text-white px-8 py-3 rounded-full hover:bg-green-700 transition duration-300 transform hover:scale-105">
-                        Contact Us Today
-                    </button>
+                <!-- Crop Analysis -->
+                <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-200 overflow-hidden">
+                    <div class="p-6">
+                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Crop Analysis</h3>
+                        <p class="text-gray-600 mb-4">
+                            Advanced crop analysis and monitoring to ensure optimal growth and maximum yield.
+                        </p>
+                        <a href="#" class="text-green-600 hover:text-green-700 font-medium inline-flex items-center">
+                            Learn More
+                            <svg class="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Market Access -->
+                <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-200 overflow-hidden">
+                    <div class="p-6">
+                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Market Access</h3>
+                        <p class="text-gray-600 mb-4">
+                            Connect with buyers and access new markets to maximize your farming profits.
+                        </p>
+                        <a href="#" class="text-green-600 hover:text-green-700 font-medium inline-flex items-center">
+                            Learn More
+                            <svg class="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 </template>
 
 <script setup>

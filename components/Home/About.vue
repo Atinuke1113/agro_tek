@@ -1,80 +1,64 @@
 <template>
-    <div class="mt-24 relative min-h-screen">
-    
-        <div class="moving-bg pt-10">
-            <h2 class="text-white text-center text-4xl font-bold">About Us</h2>
-            <div class="container mx-auto px-4 py-16">
-                
-                <div class="grid md:grid-cols-2 gap-12 items-center">
-               
-                    <div class="text-content">
-                        <h2 class="text-4xl font-bold text-yellow-200 mb-6">About Agro-tek Limited</h2>
-                        <div class="space-y-4">
-                            <p class="text-lg text-gray-200 leading-relaxed">
-                                At Agro-tek Limited, we are pioneering sustainable agricultural solutions with a focus on inclusivity and innovation. Our mission is to transform the agricultural landscape by empowering farmers, particularly women and those with disabilities.
-                            </p>
-                            <p class="text-lg text-gray-200 leading-relaxed">
-                                Founded with a vision to break barriers in agriculture, we have consistently worked towards creating opportunities for underrepresented groups in the farming sector. Our approach combines traditional farming wisdom with modern agricultural technology.
-                            </p>
-                            <div class="mt-8">
-                                <h3 class="text-2xl font-semibold text-yellow-200 mb-4">Our Core Values</h3>
-                                <ul class="list-none space-y-3">
-                                    <li class="flex items-center text-white">
-                                        <svg class="w-6 h-6 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                        </svg>
-                                        Inclusivity in Agriculture
-                                    </li>
-                                    <li class="flex items-center text-white">
-                                        <svg class="w-6 h-6 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                        </svg>
-                                        Sustainable Farming Practices
-                                    </li>
-                                    <li class="flex items-center text-white">
-                                        <svg class="w-6 h-6 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                        </svg>
-                                        Community Empowerment
-                                    </li>
-                                </ul>
+    <section id="about" class="moving-bg mt-28">
+        <h2 class="text-4xl text-center  font-bold text-white pt-16">About Us</h2>
+        <div class="container mx-auto px-4 py-20">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="text-content">
+                    <p class="text-xl text-gray-300 mb-8">
+                        At Agro-tek, we're committed to revolutionizing agriculture through innovative technology 
+                        and sustainable practices. Our mission is to empower farmers, particularly women and 
+                        those with disabilities, to achieve greater productivity and financial independence.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0">
+                                <div class="w-12 h-12 rounded-full bg-green-500 bg-opacity-20 flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-yellow-200 mb-2">Our Vision</h3>
+                                <p class="text-gray-400">
+                                    To create an inclusive agricultural ecosystem where every farmer has access to 
+                                    modern farming technologies and sustainable practices.
+                                </p>
                             </div>
                         </div>
-                    </div>
-
-                  
-                    <div class="image-content">
-                        <div class="relative">
-                            <div class="absolute -top-4 -left-4 w-full h-full  rounded-lg">
-                                <img 
-                                src="@/assets/img/about-img.jpg" 
-                                alt="Farmers at work" 
-                                class="w-full h-[500px] object-cover rounded-lg shadow-xl"
-                            />
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0">
+                                <div class="w-12 h-12 rounded-full bg-green-500 bg-opacity-20 flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                    </svg>
+                                </div>
                             </div>
-                            <img 
-                                src="@/assets/img/rectangle.jpg" 
-                                alt="Farmers at work" 
-                                class="w-full h-[500px] object-cover rounded-lg shadow-4xl"
-                            />
-                        </div>
-                        <div class="stats-box bg-green-600 p-6 rounded-lg shadow-lg mt-6">
-                            <div class="grid grid-cols-2 gap-4">
-                                <div class="text-center">
-                                    <h4 class="text-3xl font-bold text-white">1000+</h4>
-                                    <p class="text-gray-100">Farmers Supported</p>
-                                </div>
-                                <div class="text-center">
-                                    <h4 class="text-3xl font-bold text-white">50+</h4>
-                                    <p class="text-gray-100">Communities Reached</p>
-                                </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-yellow-200 mb-2">Our Approach</h3>
+                                <p class="text-gray-400">
+                                    We combine cutting-edge technology with traditional farming wisdom to create 
+                                    solutions that are both innovative and practical.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="image-content relative">
+                    <div class="relative h-[600px] rounded-lg overflow-hidden shadow-2xl">
+                        <img 
+                            src="@/assets/img/about-img.jpg" 
+                            alt="Farmers in the field" 
+                            class="absolute inset-0 w-full h-full object-cover"
+                        />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent"></div>
+                    </div>
+                    <div class="absolute -bottom-10 -left-10 w-48 h-48 bg-green-500 rounded-full opacity-20 blur-3xl"></div>
+                    <div class="absolute -top-10 -right-10 w-48 h-48 bg-green-500 rounded-full opacity-20 blur-3xl"></div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 </template>
 
 <script setup>
@@ -82,22 +66,30 @@ import { onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 
 onMounted(() => {
-  const route = useRoute()
-  if (route.hash) {
-    const element = document.querySelector(route.hash)
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
+    const route = useRoute()
+    if (route.hash) {
+        const element = document.querySelector(route.hash)
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' })
+        }
     }
-  }
+
+    // Initialize AOS
+    if (typeof window !== 'undefined') {
+        window.AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 50
+        })
+    }
 })
 </script>
 
 <style scoped>
 .moving-bg {
     background: linear-gradient(45deg, 
-        rgba(0, 0, 0, 0.9),
-        rgba(0, 50, 0, 0.8)),
-        url('/assets/img/farm-pattern.jpg');
+        rgba(0, 0, 0, 0.92),
+        rgba(0, 40, 0, 0.85));
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
     min-height: 100vh;
@@ -145,5 +137,17 @@ onMounted(() => {
         opacity: 1;
         transform: translateX(0);
     }
+}
+
+.image-content::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    bottom: -10px;
+    left: -10px;
+    background: linear-gradient(45deg, rgba(0, 128, 0, 0.1), rgba(0, 255, 0, 0.05));
+    border-radius: 20px;
+    z-index: -1;
 }
 </style>

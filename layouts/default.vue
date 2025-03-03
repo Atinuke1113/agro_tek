@@ -1,12 +1,17 @@
 <template>
-  <div class="container mx-auto my-4 px-4">
-    <NavbarHeader />
-  <div class="content my-5">
-    <slot />
-  </div>
+  <div class="min-h-screen flex flex-col">
+    <Header />
+    <main class="flex-grow">
+      <slot />
+    </main>
     <Footer />
   </div>
 </template>
+
+<script setup>
+import Header from '~/components/Navbar/Header.vue'
+import Footer from '~/components/Navbar/Footer.vue'
+</script>
 
 <script>
    

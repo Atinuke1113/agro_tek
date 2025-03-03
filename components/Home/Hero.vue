@@ -4,9 +4,9 @@
         <div class="container mx-auto px-4 relative z-10">
           <div class="max-w-3xl">
             <h1 class="text-4xl md:text-6xl text-white font-bold mb-6">
-              Welcome to <span class="text-green-600">Agro-tek </span>Limited
+              Welcome to <span class="text-green-500">Agro-tek </span>Limited
             </h1>
-            <p class="text-xl md:text-2xl text-yellow-200 font-medium mb-8 pl-10">
+            <p class="text-xl md:text-2xl text-yellow-200 font-medium mb-8">
               We are breaking the bias by leading the inclusion of female farmers and farmers living with disabilities.
             </p>
             <button class="bg-green-600 text-white px-8 py-3 rounded-full text-lg hover:bg-green-700 transition duration-300">

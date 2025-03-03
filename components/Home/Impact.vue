@@ -1,130 +1,101 @@
 <template>
-    <div class="relative min-h-screen bg-gray-50">
-      
-        <div class="pt-20 pb-16">
-            
-            <div class="text-center mb-16 px-4" data-aos="fade-down">
-                <h2 class="text-4xl font-bold text-gray-800 mb-4">Our Impact</h2>
-                <div class="w-24 h-1 bg-green-600 mx-auto mb-6"></div>
-                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-                    Transforming lives through sustainable agriculture and inclusive farming practices
+    <section id="impact" class="py-16 md:py-24 mt-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Impact</h2>
+                <p class="text-lg text-gray-600">
+                    Making a real difference in agricultural communities through sustainable and inclusive practices.
                 </p>
             </div>
 
-             <div class="container mx-auto px-4 mb-16">
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-                    <div class="impact-card" data-aos="zoom-in" data-aos-delay="0">
-                        <div class="text-4xl md:text-5xl font-bold text-green-600 mb-2">12,298</div>
-                        <p class="text-gray-600">Smallholder farmers impacted</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Impact Stats -->
+                <div class="bg-white rounded-xl p-6 shadow-sm">
+                    <div class="text-center">
+                        <div class="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4">
+                            <svg class="w-8 h-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-3xl font-bold text-gray-900 mb-2">1,000+</h3>
+                        <p class="text-gray-600">Farmers Supported</p>
                     </div>
-                    <div class="impact-card" data-aos="zoom-in" data-aos-delay="100">
-                        <div class="text-4xl md:text-5xl font-bold text-green-600 mb-2">1,502</div>
-                        <p class="text-gray-600">Female farmers empowered</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 shadow-sm">
+                    <div class="text-center">
+                        <div class="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4">
+                            <svg class="w-8 h-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-3xl font-bold text-gray-900 mb-2">50+</h3>
+                        <p class="text-gray-600">Communities Reached</p>
                     </div>
-                    <div class="impact-card" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="text-4xl md:text-5xl font-bold text-green-600 mb-2">3,397</div>
-                        <p class="text-gray-600">Farmers with disabilities supported</p>
-                    </div>
-                    <div class="impact-card" data-aos="zoom-in" data-aos-delay="300">
-                        <div class="text-4xl md:text-5xl font-bold text-green-600 mb-2">224</div>
-                        <p class="text-gray-600">Communities reached</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 shadow-sm">
+                    <div class="text-center">
+                        <div class="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4">
+                            <svg class="w-8 h-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
+                            </svg>
+                        </div>
+                        <h3 class="text-3xl font-bold text-gray-900 mb-2">75%</h3>
+                        <p class="text-gray-600">Yield Improvement</p>
                     </div>
                 </div>
             </div>
 
-  
-            <div class="bg-white py-16">
-                <div class="container mx-auto px-4">
-                    <h3 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Impact Stories</h3>
-                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                       
-                        <div class="story-card" data-aos="fade-up" data-aos-delay="0">
-                            <div class="relative h-48 mb-4 overflow-hidden rounded-t-lg">
-                                <img src="@/assets/img/women_in_agriculture.jpg" alt="Farmer success story" class="w-full h-full object-cover">
+            <!-- Impact Stories -->
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Women in Agriculture</h3>
+                        <p class="text-gray-600 mb-4">
+                            Our programs have empowered over 500 women farmers, providing them with training, resources, and market access opportunities.
+                        </p>
+                        <div class="flex items-center space-x-4">
+                            <div class="flex-shrink-0">
+                                <div class="h-12 w-12 rounded-full bg-green-100 flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" />
+                                    </svg>
+                                </div>
                             </div>
-                            <div class="p-6">
-                                <h4 class="text-xl font-semibold mb-2">Women in Agriculture</h4>
-                                <p class="text-gray-600 mb-4">
-                                    Empowering female farmers through training and resources, leading to increased crop yields and financial independence.
-                                </p>
-                                <button class="text-green-600 font-semibold hover:text-green-700">
-                                    Read More →
-                                </button>
-                            </div>
-                        </div>
-
-                   
-                        <div class="story-card" data-aos="fade-up" data-aos-delay="100">
-                            <div class="relative h-48 mb-4 overflow-hidden rounded-t-lg">
-                                <img src="@/assets/img/inclusive_farming.jpg" alt="Community impact" class="w-full h-full object-cover">
-                            </div>
-                            <div class="p-6">
-                                <h4 class="text-xl font-semibold mb-2">Inclusive Farming</h4>
-                                <p class="text-gray-600 mb-4">
-                                    Creating opportunities for farmers with disabilities through adaptive equipment and specialized training programs.
-                                </p>
-                                <button class="text-green-600 font-semibold hover:text-green-700">
-                                    Read More →
-                                </button>
-                            </div>
-                        </div>
-
-                        
-                        <div class="story-card" data-aos="fade-up" data-aos-delay="200">
-                            <div class="relative h-48 mb-4 overflow-hidden rounded-t-lg">
-                                <img src="@/assets/img/community_growth.jpg" alt="Sustainable farming" class="w-full h-full object-cover">
-                            </div>
-                            <div class="p-6">
-                                <h4 class="text-xl font-semibold mb-2">Community Growth</h4>
-                                <p class="text-gray-600 mb-4">
-                                    Building stronger communities through sustainable farming practices and knowledge sharing.
-                                </p>
-                                <button class="text-green-600 font-semibold hover:text-green-700">
-                                    Read More →
-                                </button>
+                            <div>
+                                <p class="text-sm font-medium text-gray-900">Success Rate</p>
+                                <p class="text-lg font-bold text-green-600">85%</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            
-            <div class="container mx-auto px-4 py-16">
-                <h3 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Our SDG Contributions</h3>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="sdg-card" data-aos="fade-up" data-aos-delay="0">
-                        <div class="icon-wrapper mb-4">
-                            <i class="fas fa-hand-holding-heart text-4xl text-green-600"></i>
-                        </div>
-                        <h4 class="text-xl font-semibold mb-2">No Poverty</h4>
-                        <p class="text-gray-600">
-                            Supporting farmers with resources and training to increase their income and break the cycle of poverty.
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Sustainable Practices</h3>
+                        <p class="text-gray-600 mb-4">
+                            Implementation of sustainable farming practices has led to a 40% reduction in water usage and improved soil health.
                         </p>
-                    </div>
-
-                    <div class="sdg-card" data-aos="fade-up" data-aos-delay="100">
-                        <div class="icon-wrapper mb-4">
-                            <i class="fas fa-seedling text-4xl text-green-600"></i>
+                        <div class="flex items-center space-x-4">
+                            <div class="flex-shrink-0">
+                                <div class="h-12 w-12 rounded-full bg-green-100 flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-sm font-medium text-gray-900">Resource Efficiency</p>
+                                <p class="text-lg font-bold text-green-600">40%</p>
+                            </div>
                         </div>
-                        <h4 class="text-xl font-semibold mb-2">Zero Hunger</h4>
-                        <p class="text-gray-600">
-                            Improving agricultural productivity to ensure food security in rural communities.
-                        </p>
-                    </div>
-
-                    <div class="sdg-card" data-aos="fade-up" data-aos-delay="200">
-                        <div class="icon-wrapper mb-4">
-                            <i class="fas fa-users text-4xl text-green-600"></i>
-                        </div>
-                        <h4 class="text-xl font-semibold mb-2">Reduced Inequalities</h4>
-                        <p class="text-gray-600">
-                            Creating inclusive opportunities for marginalized groups in agriculture.
-                        </p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 </template>
 
 <script setup>
