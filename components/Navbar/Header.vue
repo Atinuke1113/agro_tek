@@ -49,7 +49,7 @@
           </div>
   
         
-          <div class="sm:hidden">
+          <div class="xs: hidden md:flex items-center space-x-4">
             <button @click="toggleMenu" class="text-gray-700 hover:text-green-600 transition-colors duration-200">
               <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path v-if="!isOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -66,7 +66,7 @@
           style="margin-top: 4rem; z-index: -1;">
         </div>
   
-        <div class="xs:hidden">
+        <div class="sm:hidden">
           <div class="overflow-hidden transition-all duration-300 ease-in-out"
             :style="{ maxHeight: isOpen ? '400px' : '0' }">
             <div class="px-2 pt-2 pb-3 space-y-1">
