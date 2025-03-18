@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full">
+  <div class="w-full overflow-hidden">
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
@@ -21,6 +21,18 @@ html {
 .swiper-pagination-bullet-active {
   background: white !important;
 }
+
+@media (min-width: 100px) {
+  .container{
+
+width: 100% !important;
+}
+
+.container {
+        max-width: 100% !important;
+    }
+}
+
 
 /* 
 .page-left-enter-active,
