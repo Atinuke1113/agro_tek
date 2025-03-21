@@ -19,11 +19,12 @@
                 <p class="text-xl md:text-2xl text-yellow-200 font-medium mb-12 opacity-0 animate-text">
                     We are breaking the bias by leading the inclusion of female farmers and farmers living with disabilities.
                 </p>
-                <div class="space-x-4 opacity-0 animate-buttons">
-                    <button class="bg-green-600 text-white px-8 py-4 rounded-full text-lg hover:bg-green-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
-                        Learn How
-                    </button>
-                </div>
+                <NuxtLink 
+              to="/resources" 
+              class="bg-green-600 text-white text-2xl px-10 py-5 rounded-full hover:bg-green-700 transition-all duration-200 transform hover:scale-105 active:scale-95"
+            >
+             Learn How
+            </NuxtLink>
             </div>
         </div>
 
