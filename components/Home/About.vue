@@ -62,7 +62,7 @@
                         </div>
                         
                         <div class="grid grid-cols-2 gap-8 fade-up" style="animation-delay: 0.8s">
-                            <div>
+                            <div class="text-center">
                                 <p class="text-3xl font-bold text-yellow-300">5000+</p>
                                 <p class="text-gray-800">Farmers Empowered</p>
                             </div>
