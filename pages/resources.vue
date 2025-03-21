@@ -53,7 +53,7 @@
 const resources = [
   {
     id: 'sustainable-farming',  // Make sure these IDs match exactly
-    title: 'Sustainable Farming Practices',
+    // title: 'Sustainable Farming Practices',
     description: 'Learn about eco-friendly farming methods and sustainable agricultural practices.',
     image: 'sustainable.jpg',
     type: 'Guide',
@@ -61,7 +61,7 @@ const resources = [
   },
   {
     id: 'crop-disease',
-    title: 'Crop Disease Management',
+    // title: 'Crop Disease Management',
     description: 'Comprehensive guide on identifying and treating common crop diseases.',
     image: 'crop_disease_management.jpg',
     type: 'Tutorial',
@@ -69,7 +69,7 @@ const resources = [
   },
   {
     id: 'market-analysis',
-    title: 'Market Price Analysis',
+    // title: 'Market Price Analysis',
     description: 'Current market trends and price analysis for agricultural products.',
     image: 'market_price_analysis.jpg',
     type: 'Report',
@@ -77,7 +77,7 @@ const resources = [
   },
   {
     id: 'smart-irrigation',
-    title: 'Smart Irrigation Systems',
+    // title: 'Smart Irrigation Systems',
     description: 'Modern irrigation techniques and water management strategies.',
     image: 'smart_irrigation.jpg',
     type: 'Guide',
@@ -85,7 +85,7 @@ const resources = [
   },
   {
     id: 'organic-certification',
-    title: 'Organic Certification',
+    // title: 'Organic Certification',
     description: 'Step-by-step guide to obtaining organic farming certification.',
     image: 'organic_certification.jpg',
     type: 'Guide',
@@ -93,7 +93,7 @@ const resources = [
   },
   {
     id: 'agri-tech',
-    title: 'Agricultural Technology',
+    // title: 'Agricultural Technology',
     description: 'Latest technological innovations in modern farming.',
     image: 'agricultural_technology.jpg',
     type: 'Article',

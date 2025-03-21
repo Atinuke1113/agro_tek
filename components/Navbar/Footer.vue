@@ -44,7 +44,7 @@
 
         <!-- Services -->
         <div>
-          <h3 class="text-sm font-semibold text-gray-900 uppercase tracking-wider">Our Services</h3>
+          <h3 class="text-sm font-semibold text-gray-900 uppercase tracking-wider">Our Resources</h3>
           <ul class="mt-4 space-y-3">
             <li v-for="service in services" :key="service">
               <a href="#" class="text-gray-600 hover:text-green-600 transition-colors duration-200">
@@ -102,10 +102,11 @@ const navItems = [
 ]
 
 const services = [
-  'Farm Management',
-  'Crop Analysis',
-  'Market Access',
-  'Technical Support',
-  'Agricultural Training'
+  'Sustainable Farming Practices',
+  'Crop Disease Management',
+  'Market Price Analysis',
+  'Smart Irrigation Systems',
+  'Organic Certification',
+  'Agricultural Technology'
 ]
 </script>
