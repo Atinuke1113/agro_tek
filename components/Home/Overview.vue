@@ -1,5 +1,5 @@
 <template>
-    <section class="relative py-24 overflow-hidden">
+    <section class="relative py-20 md:px-24 xs:px-10">
         <!-- Keep existing background elements -->
         <div class="absolute inset-0 overflow-hidden">
             <div class="floating-circles">
@@ -14,7 +14,7 @@
             </div>
         </div>
 
-        <div class="container mx-auto px-4 relative z-10">
+        <div class="container mx-auto relative z-10">
             <!-- Modified counter section - removed v-scroll-reveal -->
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20">
                 <div v-for="stat in stats" :key="stat.value" 

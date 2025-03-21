@@ -36,6 +36,7 @@
     "sass": "^1.51.0",
     "swiper": "^9.0.0",
     "uuid": "^9.0.1",
+    "vue-observe-visibility": "^1.0.0",
     "vue-pull-to": "^0.1.8",
     "vue3-editor": "^0.1.1",
     "vue3-lottie": "^3.3.0",

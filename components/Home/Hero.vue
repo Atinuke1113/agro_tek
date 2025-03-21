@@ -1,5 +1,5 @@
 <template>
-    <section class="relative min-h-screen flex items-center">
+    <section class="relative min-h-screen flex items-center py-20 md:px-24 xs:px-10">
         <!-- Background Image Container -->
         <div class="absolute inset-0 z-0">
             <img 
@@ -11,7 +11,7 @@
         </div>
 
         <!-- Content Container -->
-        <div class="container mx-auto px-4 relative z-10">
+        <div class="container mx-auto relative z-10">
             <div class="max-w-3xl">
                 <h1 class="text-5xl md:text-7xl text-white font-bold mb-6 opacity-0 animate-title">
                     Welcome to <span class="text-green-400">Agro-tek </span>Limited

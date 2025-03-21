@@ -1,5 +1,5 @@
 <template>
-    <section id="impact" class="py-20 bg-gradient-to-br from-green-900 via-green-800 to-green-900">
+    <section id="impact" class="py-16 md:px-24 xs:px-10 bg-gradient-to-br from-green-900 via-green-800 to-green-900">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16 animate-fade-in">
                 <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Our Impact</h2>
@@ -23,7 +23,7 @@
             <!-- Impact Stories -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div class="impact-content animate-slide-right">
-                    <h3 class="text-3xl font-bold text-white mb-6">Making Real Change</h3>
+                    <h3 class="text-5xl font-bold text-white mb-6">Making Real Change</h3>
                     <div class="space-y-6">
                         <div v-for="(achievement, index) in achievements" 
                             :key="index"

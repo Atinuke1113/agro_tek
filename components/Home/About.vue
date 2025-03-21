@@ -1,5 +1,5 @@
 <template>
-    <section id="about" class="relative min-h-screen py-20 overflow-hidden">
+    <section id="about" class="relative min-h-screen py-20 md:px-24 xs:px-10 overflow-hidden">
         <!-- Animated Particles -->
         <div class="particles-container absolute inset-0">
             <div v-for="n in 40" :key="n" 
@@ -15,7 +15,7 @@
             ></div>
         </div>
 
-        <div class="container mx-auto px-4 relative z-10">
+        <div class="container mx-auto  relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
                 <div class="lg:col-span-8 space-y-12">
                     <div class="animate-fade-in">

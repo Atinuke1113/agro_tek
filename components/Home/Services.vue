@@ -1,5 +1,5 @@
 <template>
-    <section id="services" class="py-16 md:py-24 bg-gray-50">
+    <section id="services" class="py-20 md:px-20 xs:px-10 bg-gray-50">
         <div class="container mx-auto px-4">
             <div class="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
@@ -24,11 +24,7 @@
                         </div>
                     </div>
                     <div class="p-6">
-                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-                            <svg class="w-6 h-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path v-if="service.iconPath" :d="service.iconPath" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-                            </svg>
-                        </div>
+                        
                         <h3 class="text-xl font-semibold text-gray-900 mb-2">{{ service.title }}</h3>
                         <p class="text-gray-600 mb-4">{{ service.description }}</p>
                         <ul class="mb-4 space-y-2">
@@ -65,8 +61,7 @@ const services = [
             'Automated irrigation',
             'Yield prediction',
             'Resource optimization'
-        ],
-        iconPath: "M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"
+        ]
     },
     {
         // title: 'Advanced Crop Analysis',
@@ -78,8 +73,7 @@ const services = [
             'Growth tracking',
             'Soil analysis',
             'Weather integration'
-        ],
-        iconPath: "M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+        ]
     },
     {
         // title: 'Market Access Platform',
@@ -91,8 +85,7 @@ const services = [
             'Buyer networking',
             'Transport logistics',
             'Payment security'
-        ],
-        iconPath: "M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+        ]
     }
 ]
 

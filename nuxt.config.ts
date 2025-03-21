@@ -60,6 +60,8 @@ export default defineNuxtConfig({
     'nuxt-swiper',
     'nuxt-quasar-ui',
     'nuxt-nodemailer',
+    // Remove this line
+    // 'vue-observe-visibility/nuxt'
   ],
   nodemailer: {
     from: process.env.NUXT_NODEMAILER_FROM,

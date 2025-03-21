@@ -1,6 +1,6 @@
 <template>
-  <footer class="bg-white border-t">
-    <div class="max-w-7xl mx-auto px-4 py-12">
+  <footer class="bg-white border-t py-20 md:px-24 xs:px-10">
+    <div class="max-w-7xl mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
         <!-- Company Info -->
         <div class="space-y-4">
