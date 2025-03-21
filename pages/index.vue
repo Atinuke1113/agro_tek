@@ -2,6 +2,7 @@
   <div class="w-full">
     <HomeHero />
     <HomeAbout />
+    <HomeOverview />
     <HomeServices />
     <HomeImpact />
   </div>

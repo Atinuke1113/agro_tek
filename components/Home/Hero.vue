@@ -1,44 +1,95 @@
 <template>
   <div class="w-full">
-    <div class="hero w-full min-h-[80vh] flex items-center">
+    <div class="hero w-full min-h-screen flex items-center relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 z-0"></div>
+
       <div class="container mx-auto px-4 relative z-10">
         <div class="max-w-3xl">
-          <h1 class="text-4xl md:text-6xl text-white font-bold mb-6">
-            Welcome to <span class="text-green-500">Agro-tek </span>Limited
+          <h1 class="text-5xl md:text-7xl text-white font-bold mb-6 opacity-0 animate-title">
+            Welcome to <span class="text-green-400">Agro-tek </span>Limited
           </h1>
-          <p class="text-xl md:text-2xl text-yellow-200 font-medium mb-8">
+          <p class="text-xl md:text-2xl text-yellow-200 font-medium mb-12 opacity-0 animate-text">
             We are breaking the bias by leading the inclusion of female farmers and farmers living with disabilities.
           </p>
-          <button class="bg-green-600 text-white px-8 py-3 rounded-full text-lg hover:bg-green-700 transition duration-300">
-            Learn How
-          </button>
+          <div class="space-x-4 opacity-0 animate-buttons">
+            <button class="bg-green-600 text-white px-8 py-4 rounded-full text-lg hover:bg-green-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+              Learn How
+            </button>
+          </div>
         </div>
       </div>
+
+      <div class="absolute -bottom-32 -right-32 w-96 h-96 bg-green-500/20 rounded-full blur-3xl animate-blob"></div>
+      <div class="absolute -top-32 -left-32 w-96 h-96 bg-yellow-500/10 rounded-full blur-3xl animate-blob animation-delay-2000"></div>
     </div>
   </div>
 </template>
 
-<script setup>
-
-</script>
-
 <style scoped>
 .hero {
-  background-image: url('/assets/img/hero_bg.png');
+  background-image: url('/assets/img/new_hero.jpg');
   background-color: black;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-top: 80px;
+  background-attachment: fixed;
 }
 
+.animate-title {
+  animation: slideUp 1s ease-out forwards;
+}
+
+.animate-text {
+  animation: slideUp 1s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+.animate-buttons {
+  animation: slideUp 1s ease-out forwards;
+  animation-delay: 0.6s;
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes blob {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
 
 .hero button {
   transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .hero button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
 </style>

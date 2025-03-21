@@ -1,96 +1,52 @@
 <template>
-    <section id="impact" class="py-16 md:py-24 mt-24 bg-gray-50">
+    <section id="impact" class="py-20 bg-gradient-to-br from-green-900 via-green-800 to-green-900">
         <div class="container mx-auto px-4">
-            <div class="max-w-3xl mx-auto text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Impact</h2>
-                <p class="text-lg text-gray-600">
-                    Making a real difference in agricultural communities through sustainable and inclusive practices.
+            <div class="text-center mb-16 animate-fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Our Impact</h2>
+                <p class="text-xl text-green-100 max-w-3xl mx-auto">
+                    Transforming lives and agriculture through sustainable innovation and inclusive practices
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Impact Stats -->
-                <div class="bg-white rounded-xl p-6 shadow-sm">
-                    <div class="text-center">
-                        <div class="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4">
-                            <svg class="w-8 h-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                            </svg>
-                        </div>
-                        <h3 class="text-3xl font-bold text-gray-900 mb-2">1,000+</h3>
-                        <p class="text-gray-600">Farmers Supported</p>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-xl p-6 shadow-sm">
-                    <div class="text-center">
-                        <div class="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4">
-                            <svg class="w-8 h-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                            </svg>
-                        </div>
-                        <h3 class="text-3xl font-bold text-gray-900 mb-2">50+</h3>
-                        <p class="text-gray-600">Communities Reached</p>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-xl p-6 shadow-sm">
-                    <div class="text-center">
-                        <div class="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4">
-                            <svg class="w-8 h-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
-                            </svg>
-                        </div>
-                        <h3 class="text-3xl font-bold text-gray-900 mb-2">75%</h3>
-                        <p class="text-gray-600">Yield Improvement</p>
-                    </div>
+            <!-- Stats Section -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+                <div v-for="(stat, index) in stats" 
+                    :key="stat.value"
+                    class="stat-card bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center transform hover:scale-105 transition-all duration-300"
+                    :style="{ animationDelay: `${index * 200}ms` }"
+                >
+                    <div class="text-4xl md:text-5xl font-bold text-yellow-300 mb-3">{{ stat.value }}</div>
+                    <div class="text-lg text-green-100">{{ stat.label }}</div>
                 </div>
             </div>
 
             <!-- Impact Stories -->
-            <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-white rounded-xl shadow-sm overflow-hidden">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Women in Agriculture</h3>
-                        <p class="text-gray-600 mb-4">
-                            Our programs have empowered over 500 women farmers, providing them with training, resources, and market access opportunities.
-                        </p>
-                        <div class="flex items-center space-x-4">
-                            <div class="flex-shrink-0">
-                                <div class="h-12 w-12 rounded-full bg-green-100 flex items-center justify-center">
-                                    <svg class="w-6 h-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" />
-                                    </svg>
-                                </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="impact-content animate-slide-right">
+                    <h3 class="text-3xl font-bold text-white mb-6">Making Real Change</h3>
+                    <div class="space-y-6">
+                        <div v-for="(achievement, index) in achievements" 
+                            :key="index"
+                            class="flex items-start space-x-4 achievement-card"
+                            :style="{ animationDelay: `${index * 300}ms` }"
+                        >
+                            <div class="flex-shrink-0 w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-green-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path :d="achievement.icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                </svg>
                             </div>
                             <div>
-                                <p class="text-sm font-medium text-gray-900">Success Rate</p>
-                                <p class="text-lg font-bold text-green-600">85%</p>
+                                <h4 class="text-xl font-semibold text-yellow-200 mb-2">{{ achievement.title }}</h4>
+                                <p class="text-green-100">{{ achievement.description }}</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="bg-white rounded-xl shadow-sm overflow-hidden">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Sustainable Practices</h3>
-                        <p class="text-gray-600 mb-4">
-                            Implementation of sustainable farming practices has led to a 40% reduction in water usage and improved soil health.
-                        </p>
-                        <div class="flex items-center space-x-4">
-                            <div class="flex-shrink-0">
-                                <div class="h-12 w-12 rounded-full bg-green-100 flex items-center justify-center">
-                                    <svg class="w-6 h-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <div>
-                                <p class="text-sm font-medium text-gray-900">Resource Efficiency</p>
-                                <p class="text-lg font-bold text-green-600">40%</p>
-                            </div>
-                        </div>
+                <div class="impact-image animate-slide-left">
+                    <div class="relative">
+                        <img src="@/assets/img/sustainable.jpg" alt="Impact" class="rounded-2xl shadow-2xl">
+                        <div class="absolute inset-0 bg-gradient-to-t from-green-900/50 to-transparent rounded-2xl"></div>
                     </div>
                 </div>
             </div>
@@ -99,39 +55,107 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
+const stats = [
+    { value: '10K+', label: 'Farmers Empowered' },
+    { value: '30%', label: 'Yield Increase' },
+    { value: '15+', label: 'Communities Served' },
+    { value: '40%', label: 'Income Growth' }
+]
 
-
-onMounted(() => {
-   
-    if (typeof window !== 'undefined') {
-        window.AOS.init({
-            duration: 1000,
-            once: true,
-            offset: 50
-        })
+const achievements = [
+    {
+        title: 'Female Farmer Empowerment',
+        description: 'Supporting women in agriculture through training, resources, and market access opportunities.',
+        icon: 'M12 4.354a4 4 0 110 5.292V12H5.69a4 4 0 110-5.292V4.354a4 4 0 110 5.292v2.354a4 4 0 110 5.292V20'
+    },
+    {
+        title: 'Sustainable Practices',
+        description: 'Implementing eco-friendly farming techniques that preserve natural resources for future generations.',
+        icon: 'M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064'
+    },
+    {
+        title: 'Technology Integration',
+        description: 'Bridging the digital divide by providing accessible agricultural technology solutions.',
+        icon: 'M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z'
     }
-})
+]
 </script>
 
 <style scoped>
-.impact-card {
-    @apply bg-white p-6 rounded-lg shadow-lg text-center transition-all duration-300 hover:shadow-xl;
+.stat-card {
+    opacity: 0;
+    animation: fadeUp 0.8s ease-out forwards;
 }
 
-.story-card {
-    @apply bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl;
+.achievement-card {
+    opacity: 0;
+    animation: slideIn 0.8s ease-out forwards;
 }
 
-.story-card:hover {
-    transform: translateY(-5px);
+.animate-fade-in {
+    animation: fadeIn 1s ease-out forwards;
 }
 
-.sdg-card {
-    @apply bg-white p-6 rounded-lg shadow-lg text-center transition-all duration-300 hover:shadow-xl hover:bg-green-50;
+.animate-slide-right {
+    animation: slideRight 1s ease-out forwards;
 }
 
-.icon-wrapper {
-    @apply flex items-center justify-center;
+.animate-slide-left {
+    animation: slideLeft 1s ease-out forwards;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideRight {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 </style>

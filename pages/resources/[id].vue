@@ -1,163 +1,92 @@
 <template>
-  <div class="min-h-screen bg-gray-50 pt-24">
-    <!-- Hero Section -->
-    <div class="relative overflow-hidden bg-green-600 py-16">
-      <div class="max-w-7xl mx-auto px-4">
-        <div class="text-center animate-fade-in">
-          <h1 class="text-4xl font-bold text-white mb-4">{{ resource.title }}</h1>
-          <p class="text-green-100 text-lg">{{ resource.type }} • {{ resource.duration }}</p>
+    <div class="min-h-screen bg-gradient-to-br from-black to-gray-900">
+        <!-- Hero Section -->
+        <div class="relative h-[60vh] overflow-hidden">
+            <div class="absolute inset-0 bg-green-900/20"></div>
+            
+            <!-- Back Button -->
+            <NuxtLink to="/#resources" 
+                class="absolute top-8 left-8 flex items-center text-white hover:text-green-400 transition-colors duration-300 z-10">
+                <svg class="w-6 h-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+                </svg>
+                Back to Resources
+            </NuxtLink>
+
+            <!-- Title Section -->
+            <div class="absolute bottom-0 left-0 right-0 p-8 md:p-16">
+                <div class="container mx-auto">
+                    <h1 class="text-4xl md:text-6xl font-bold text-white mb-4 animate-fade-in">
+                        {{ currentResource?.title }}
+                    </h1>
+                    <p class="text-xl text-gray-300 max-w-2xl animate-fade-up">
+                        {{ currentResource?.summary }}
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="absolute inset-0 bg-[url('/images/pattern.svg')] opacity-10"></div>
+
+        <!-- Content will be added here -->
     </div>
-
-    <!-- Main Content -->
-    <div class="max-w-4xl mx-auto px-4 py-12">
-      <!-- Image Section -->
-      <div class="rounded-xl overflow-hidden mb-12 shadow-xl animate-scale-up">
-        <img :src="getImageUrl(resource.image)" :alt="resource.title" class="w-full h-[400px] object-cover">
-      </div>
-
-      <!-- Content Sections -->
-      <div class="space-y-12 animate-slide-up">
-        <!-- Overview -->
-        <section class="bg-white rounded-xl p-8 shadow-lg transform hover:scale-[1.02] transition-transform">
-          <h2 class="text-2xl font-semibold text-gray-900 mb-4">Overview</h2>
-          <p class="text-gray-600 leading-relaxed">{{ resource.description }}</p>
-        </section>
-
-        <!-- Key Points -->
-        <section class="bg-white rounded-xl p-8 shadow-lg transform hover:scale-[1.02] transition-transform">
-          <h2 class="text-2xl font-semibold text-gray-900 mb-6">Key Points</h2>
-          <ul class="space-y-4">
-            <li v-for="(point, index) in resource.keyPoints" :key="index" 
-              class="flex items-start space-x-3 animate-fade-in"
-              :style="{ animationDelay: `${index * 100}ms` }">
-              <span class="text-green-600 mt-1">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-              </span>
-              <span class="text-gray-600">{{ point }}</span>
-            </li>
-          </ul>
-        </section>
-
-        <!-- Additional Resources -->
-        <section class="bg-white rounded-xl p-8 shadow-lg transform hover:scale-[1.02] transition-transform">
-          <h2 class="text-2xl font-semibold text-gray-900 mb-6">Additional Resources</h2>
-          <div class="grid md:grid-cols-2 gap-4">
-            <a v-for="(link, index) in resource.additionalResources" 
-              :key="index"
-              :href="link.url"
-              class="flex items-center p-4 border rounded-lg hover:bg-green-50 transition-colors group"
-              :style="{ animationDelay: `${index * 100}ms` }">
-              <span class="text-green-600 mr-3">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
-                </svg>
-              </span>
-              <span class="text-gray-700 group-hover:text-green-700 transition-colors">{{ link.title }}</span>
-            </a>
-          </div>
-        </section>
-      </div>
-
-      <!-- Back Button -->
-      <div class="mt-12 text-center">
-        <NuxtLink to="/resources" 
-          class="inline-flex items-center text-green-600 hover:text-green-700 transition-colors">
-          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
-          </svg>
-          Back to Resources
-        </NuxtLink>
-      </div>
-    </div>
-  </div>
 </template>
 
 <script setup>
-definePageMeta({
-  middleware: 'resource'
-})
-
 const route = useRoute()
+const router = useRouter()
 
-// Define resources first
-const resources = [
-  {
-    id: 'sustainable-farming',
-    title: 'Sustainable Farming Practices',
-    // ... rest of the resource data
-  },
-  // ... other resources
-]
+// Sample data - replace with your actual data source
+const resources = {
+    'smart-irrigation': {
+        title: 'Smart Irrigation Systems',
+        summary: 'Advanced irrigation solutions for modern agriculture',
+        // Add more details as needed
+    },
+    'crop-monitoring': {
+        title: 'Crop Monitoring',
+        summary: 'Real-time monitoring and analysis of crop health',
+        // Add more details as needed
+    },
+    'market-access': {
+        title: 'Market Access',
+        summary: 'Connect with buyers and optimize your sales',
+        // Add more details as needed
+    }
+}
 
-// Then define the computed property
-const resource = computed(() => {
-  console.log('Current route ID:', route.params.id)
-  const found = resources.find(r => r.id === route.params.id)
-  if (!found) {
-    console.log('Resource not found, returning default')
-    return resources[0]
-  }
-  return found
+const currentResource = computed(() => {
+    return resources[route.params.id]
 })
 
-const getImageUrl = (imageName) => {
-  try {
-    return new URL(`../../assets/img/${imageName}`, import.meta.url).href
-  } catch (error) {
-    console.error(`Error loading image: ${imageName}`, error)
-    return ''
-  }
+// Redirect if resource not found
+if (!currentResource.value) {
+    router.push('/')
 }
 </script>
 
 <style scoped>
 .animate-fade-in {
-  animation: fadeIn 0.6s ease-out forwards;
+    animation: fadeIn 1s ease-out forwards;
 }
 
-.animate-slide-up {
-  animation: slideUp 0.8s ease-out forwards;
-}
-
-.animate-scale-up {
-  animation: scaleUp 0.6s ease-out forwards;
+.animate-fade-up {
+    opacity: 0;
+    animation: fadeUp 1s ease-out forwards;
+    animation-delay: 200ms;
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes scaleUp {
-  from {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 </style>
