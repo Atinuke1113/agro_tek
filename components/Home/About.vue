@@ -20,7 +20,7 @@
                 <div class="lg:col-span-8 space-y-12">
                     <div class="animate-fade-in">
                         <h2 class="text-4xl md:text-5xl font-bold text-green-400 mb-8">About Agro-tek</h2>
-                        <p class="text-xl text-gray-300 mb-12 leading-relaxed">
+                        <p class="text-xl text-gray-800 mb-12 leading-relaxed">
                             Pioneering sustainable agriculture through innovation and inclusion, making modern farming accessible to everyone.
                         </p>
                     </div>
@@ -28,30 +28,25 @@
                     <div class="space-y-12 text-content">
                         <div class="fade-up" style="animation-delay: 0.2s">
                             <h3 class="text-2xl font-bold text-green-400 mb-6">Our Journey</h3>
-                            <p class="text-gray-300 leading-relaxed mb-6">
+                            <p class="text-gray-800 leading-relaxed mb-6">
                                 Founded with a vision to transform agriculture, Agro-tek has evolved into a pioneering force in agricultural innovation. We began our journey with a simple mission: to make modern farming accessible to everyone.
                             </p>
-                            <p class="text-gray-300 leading-relaxed">
+                            <p class="text-gray-800 leading-relaxed">
                                 Our focus on inclusivity, particularly for women farmers and those with disabilities, has shaped our approach to developing practical, user-friendly solutions that address real farming challenges.
                             </p>
                         </div>
 
                         <div class="fade-up" style="animation-delay: 0.4s">
                             <h3 class="text-2xl font-bold text-green-400 mb-6">Our Mission</h3>
-                            <p class="text-gray-300 leading-relaxed mb-6">
+                            <p class="text-gray-800 leading-relaxed mb-6">
                                 We're dedicated to bridging the gap between traditional farming wisdom and modern technology. Our platform empowers farmers with accessible technologies, sustainable practices, and community-driven support systems.
                             </p>
-                            <p class="text-gray-300 leading-relaxed">
+                            <p class="text-gray-800 leading-relaxed">
                                 Through innovative training programs and digital solutions, we're creating an ecosystem where every farmer can thrive, regardless of their background or circumstances.
                             </p>
                         </div>
 
-                        <div class="fade-up" style="animation-delay: 0.6s">
-                            <h3 class="text-2xl font-bold text-green-400 mb-6">Looking Forward</h3>
-                            <p class="text-gray-300 leading-relaxed">
-                                Our vision extends beyond current achievements. We're committed to expanding our reach to 10 new regions, launching comprehensive mobile training programs, and developing AI-powered crop analysis tools. These initiatives will further our mission of making modern agricultural practices accessible to all farmers.
-                            </p>
-                        </div>
+                        
                     </div>
                 </div>
 
@@ -69,11 +64,11 @@
                         <div class="grid grid-cols-2 gap-8 fade-up" style="animation-delay: 0.8s">
                             <div>
                                 <p class="text-3xl font-bold text-yellow-300">5000+</p>
-                                <p class="text-gray-400">Farmers Empowered</p>
+                                <p class="text-gray-800">Farmers Empowered</p>
                             </div>
                             <div>
                                 <p class="text-3xl font-bold text-yellow-300">30%</p>
-                                <p class="text-gray-400">Yield Increase</p>
+                                <p class="text-gray-800">Yield Increase</p>
                             </div>
                         </div>
                     </div>
